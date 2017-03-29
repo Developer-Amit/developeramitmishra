@@ -11,14 +11,14 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://www.amgigs.com',
+        url: 'myurl.com',
         mail: {
              transport: 'SMTP',
              options: {
                  service: 'Mailgun',
                  auth: {
-                     user: 'postmaster@sandbox64674994dd8a45f4ac18b64b0b13186b.mailgun.org', // mailgun username
-                     pass: 'e21f323f96d5e42dca8bfe849efeef7a'  // mailgun password
+                     user: '', // mailgun username
+                     pass: ''  // mailgun password
                  }
              }
         },
@@ -48,8 +48,8 @@ config = {
              options: {
                  service: 'Mailgun',
                  auth: {
-                     user: 'postmaster@sandbox64674994dd8a45f4ac18b64b0b13186b.mailgun.org', // mailgun username
-                     pass: 'e21f323f96d5e42dca8bfe849efeef7a'  // mailgun password
+                     user: '', // mailgun username
+                     pass: ''  // mailgun password
                  }
              }
          },
