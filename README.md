@@ -31,4 +31,4 @@ npm start
 ```
 
 
-Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) Amit Mishra - Released under the [MIT license](LICENSE).
