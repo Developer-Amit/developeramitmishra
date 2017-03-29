@@ -1,0 +1,42 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!-- The big featured header --}}
+        <!-- App Banner ::START -->
+<div class="mobile-app-banner hide" id="remove-banner">
+<div class="app-icon">
+<img class="img-responsive" src="https://lh3.googleusercontent.com/lhLhHZJAg3HXqEKXljZYNPKcY81V73UhARe3Sos8ASjZLaeSHCfOFiecMT4jm_x3vV5o=w300"/>
+ <h4>TOCH - Watch Touch Discover</h4>
+ <span>Fashion Style</span>
+</div>
+<div class="app-close-btn">
+ <a href="https://itunes.apple.com/us/app/toch-watch-discover-shop/id1147640817?ls=1&mt=8" class="install-btn">Install App</a>
+ <a href="javascript:void(0)" id="remove-btn"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+</div>
+</div>
+ <!-- App Banner ::END -->
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+
+ <div style="clear:both;"></div>
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="https://mytoch.com"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+
+</header>
+
+{{!-- The main content area on the homepage --}}
+<main id="content" class="content" role="main">
+
+    {{!-- The tag below includes the post loop - partials/loop.hbs --}}
+    {{> "loop"}}
+
+</main>
